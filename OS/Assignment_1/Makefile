@@ -1,4 +1,4 @@
-TARGETS:= $(wildcard *.c=.out)
+TARGETS:= $(patsubst %.c,%.out,$(wildcard *.c))
 
 all: $(TARGETS)
 .PHONY: all
