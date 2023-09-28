@@ -63,5 +63,5 @@ with gr.Blocks() as server:
         gr.Markdown("# Help")
         gr.Markdown("This project is build with gradio by Ruhao Tian.")
 
-server.launch(share=True)
+server.queue().launch(share=True,server_name="0.0.0.0")
 
